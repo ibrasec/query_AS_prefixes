@@ -1,12 +1,16 @@
 # find-AS-pool
 
-a simple program to find the IP pool of the given Autonomous System (AS)
+A simple python 2.7 code to find the IP pool of the given Autonomous System (AS)
+
+It parses (dan) website to gather the required informatino.
+# Reuqired Libraries
+urllib
 
 # example: 
 
 if the AS (Autonomus System) of a given ISP is 21003, you just execute this code to know all of its registred subnets
 
-	root@PC-1:/home#./findpool 21003
+	root@PC-1:/home#python find_AS_pool.py 21003
 	'41.208.103.0/24'
 	'41.208.64.0/18'
 	'41.252.0.0/14'
