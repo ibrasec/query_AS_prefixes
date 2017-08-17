@@ -1,10 +1,12 @@
 # find-AS-pool
 
-A simple python 2.7 code to find the IP pool of a given Autonomous System (AS)
+A simple python code to lookup a list of prefixes currently announced via BGP.
 
 It parses (dan) website to gather the required informatino.
-# Reuqired Libraries
+
+# Reuqirements
 urllib
+python 2.7
 
 # example: 
 
