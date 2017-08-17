@@ -50,9 +50,9 @@ def query_AS_prefixes(AS):
 		#un-comment the below print for troubleshooting
 		#print IPtable[2].split()[3]
 		for i in range(2,len(IPtable)):
-			print IPtable[i].split()[3]
-	except:
-		print "\nPlease Check your Internet connection or your DNS server\n"
+			print(IPtable[i].split()[3])
+	except Exception as e:
+		print (e)
 
 
 if __name__ == '__main__':
