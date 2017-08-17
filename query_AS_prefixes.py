@@ -56,4 +56,4 @@ def query_AS_prefixes(AS):
 
 
 if __name__ == '__main__':
-        findpool(sys.argv[1])
+        query_AS_prefixes(sys.argv[1])
