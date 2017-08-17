@@ -1,22 +1,16 @@
 # find-AS-pool
-a simple program to find the IP pool of the given AS
 
-example: if the AS (Autonomus System) of a given ISP 
+a simple program to find the IP pool of the given Autonomous System (AS)
 
-is 21003, you just execute this code to know
+# example: 
 
-all of its registred subnets
+if the AS (Autonomus System) of a given ISP is 21003, you just execute this code to know all of its registred subnets
 
 	root@PC-1:/home#./findpool 21003
-  
 	'41.208.103.0/24'
-  
 	'41.208.64.0/18'
-  
 	'41.252.0.0/14'
- 
 	'41.252.0.0/18'
-  
 	'41.252.128.0/18'
 	'41.252.192.0/18'
 	'41.252.192.0/19'
