@@ -1,6 +1,6 @@
 # find-AS-pool
 
-A simple python 2.7 code to find the IP pool of the given Autonomous System (AS)
+A simple python 2.7 code to find the IP pool of a given Autonomous System (AS)
 
 It parses (dan) website to gather the required informatino.
 # Reuqired Libraries
