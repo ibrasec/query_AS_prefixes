@@ -3,15 +3,18 @@ import sys
 import urllib
 
 def find_AS_pool(AS):
-	""" A simple python code to find the IP pool of a given AS
+	""" A simple python code to lookup a list of prefixes
+        currently announced via BGP.
         example: if the AS (Autonomus System) of a given ISP 
         is 21003, you just execute this code to know
-        all of its registred subnets.
+        all of its announced registred subnets.
 
         This code communicate with dan website to gather the requried 
         information.
         https://www.dan.me.uk/
 
+	Author Name: Ibrahim Khorwat
+	
 	root@PC-1:/home#python find_AS_pool.py 21003
 	'41.208.103.0/24'
 	'41.208.64.0/18'
