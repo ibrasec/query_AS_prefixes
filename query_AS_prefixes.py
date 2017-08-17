@@ -2,7 +2,7 @@
 import sys
 import urllib
 
-def find_AS_pool(AS):
+def query_AS_prefixes(AS):
 	""" A simple python code to lookup a list of prefixes
         currently announced via BGP.
         example: if the AS (Autonomus System) of a given ISP 
@@ -15,7 +15,7 @@ def find_AS_pool(AS):
 
 	Author Name: Ibrahim Khorwat
 	
-	root@PC-1:/home#python find_AS_pool.py 21003
+	root@PC-1:/home#python query_AS_prefixes.py 21003
 	'41.208.103.0/24'
 	'41.208.64.0/18'
 	'41.252.0.0/14'
@@ -44,9 +44,8 @@ def find_AS_pool(AS):
 		web = urllib.urlopen("https://www.dan.me.uk/bgplookup?asn="+AS)
 		#To convert the file into a text file
 		page = web.read()
-		#To convert the txt file into a list
 		table = page[page.index('IPv4 Prefixes seen at AS'+AS):]
-		#To splite the list into items, each line represent an item in the list
+		#To splite the table into items, each line represent an item in the list
 		IPtable = table[:table.index('</table>')].splitlines()
 		#un-comment the below print for troubleshooting
 		#print IPtable[2].split()[3]
