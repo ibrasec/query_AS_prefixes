@@ -2,7 +2,7 @@
 
 A simple python code to lookup a list of prefixes currently announced via BGP.
 
-It parses (dan) website to gather the required informatino.
+It parses (dan) website to gather the required information.
 
 # Reuqirements
 urllib
@@ -10,7 +10,7 @@ python 2.7
 
 # example: 
 
-if the AS (Autonomus System) of a given ISP is 21003, you just execute this code to know all of its registred subnets
+if the AS (Autonomus System) of a given ISP is 21003, you just execute this code to know all of its registred/announnced subnets
 
 	root@PC-1:/home#python find_AS_pool.py 21003
 	'41.208.103.0/24'
@@ -36,3 +36,6 @@ if the AS (Autonomus System) of a given ISP is 21003, you just execute this code
 	'62.68.58.0/24'
 	'62.68.59.0/24'
 	'62.68.60.0/24'
+	
+# License
+GNUv3
